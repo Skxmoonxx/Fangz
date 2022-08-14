@@ -45,26 +45,26 @@ global.sdc = 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg' //Discord Mu
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*⫘⫘⫘⫘ALL PAYMENT⫘⫘⫘⫘⫘*/
-global.pdana = '088215689772' //Dana
-global.povo = '088215689772' //Ovo
-global.pgopay = '088215689772' //Gopay
-global.ppulsa = '088215689772' //Pulsa 
-global.ppulsa2 = '0895394988123' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
+global.pdana = '085962734007' //Dana
+global.povo = '083862006229' //Ovo
+global.pgopay = '083862006229' //Gopay
+global.ppulsa = '083862006229' //Pulsa 
+global.ppulsa2 = '085962734007' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
 global.psaweria = 'https://saweria.co/FangzBot' //Saweria
 
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
-global.nomorbot = '62895394988123' //Nomor Bot mu
-global.nomorown = '6288215689772' //Nomormu
-global.namebot = 'Fangz BOT' //Nama bot mu
-global.nameown = 'Fangz Ganz' //Nama mu
+global.nomorbot = '6283811544678' //Nomor Bot mu
+global.nomorown = '6283862006229' //Nomormu
+global.namebot = 'Shirohige BOTZ' //Nama bot mu
+global.nameown = 'SkyxmoonOfc' //Nama mu
 
 
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6281320170984'], //Owner1
-  ['79680341674'], //Owner2
-  ['6288215689772'], //Owner3
-  ['6281320170984', 'FANGZ ! 🥶', true] //Ini buat kamu!
+  ['6283862006229'], //Owner1
+  ['6283862006229'], //Owner2
+  ['6283862006229'], //Owner3
+  ['6283862006229', 'SKYXMOON 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -113,13 +113,13 @@ global.APIKeys = { // APIKey Here
 
 /*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
 //GANTI JANGAN NGASAL.
-global.wm = '                「 赤 FANGZ - BOT ⁩இ 」' //Wm
-global.wm2 = '➳༻❀Fangz - Ganz❁ུ۪۪.;:୭̥.' //Name Wm
-global.wm3 = '赤 FANGZ - BOT'
+global.wm = '                「 赤 SHIROHIGE - BOTZ ⁩இ 」' //Wm
+global.wm2 = '➳༻❀ SKYXMOON ❁ུ۪۪.;:୭̥.' //Name Wm
+global.wm3 = '赤 SHIROHIGE - BOTZ'
 global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '𝗬𝗧: FangzXD' //Ganti serah lu
-global.author = '                © Fangz BOT By Fangz' //Wm author
+global.titlebot = '𝗬𝗧: SkyXD' //Ganti serah lu
+global.author = '                © Shirohige BOT By Skyxmoon' //Wm author
 
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/

@@ -1,14 +1,13 @@
-let fetch = require ('node-fetch')                                                                                    
-let handler = async(m, { conn }) => {
-let res = await fetch(global.API('lolhum', '/api/random/elaina', {                                                    
-}, 'apikey'))                                                                                                         
-if (!res.ok) throw await res.text()
-let json = await res.json()                                                                                           
-if (!json.url) throw 'Error!'                                                                                         
-await conn.sendButtonImg(m.chat, await (await fetch(result)).buffer(), "Elaina", 'caption', 'NEXT', `.elaina`, m)
-}
-handler.help = ['elaina']
-handler.tags = ['anime']
-handler.command = /^(elaina)$/i
+import fetch from 'node-fetch'
 
-export default handler 
+let handler = async (m, { conn, command }) => {
+	let url = 'https://revita.herokuapp.com/api/wallpaper/elaina?apikey=ApiRevita'
+	conn.sendButton(m.chat, 'Waifu nya om (≧ω≦)', wm, await(await fetch(url)).buffer(), [['🔁Next🔁',`.${command}`]],m)
+}
+handler.command = /^(elaina)$/i
+handler.tags = ['anime']
+handler.help = ['elaina']
+handler.premium = false
+handler.limit = true
+
+export default handler

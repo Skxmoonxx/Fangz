@@ -11,7 +11,7 @@ let handler = async (m, { conn, command, args }) => {
 }
 handler.help = ['buy <jumlah limit>', 'buyall']
 handler.tags = ['xp']
-handler.command = /^buy([0-9]+)|buy|buyall$/i
+handler.command = /^buy([0-9]+)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

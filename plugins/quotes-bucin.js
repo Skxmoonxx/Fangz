@@ -1,14 +1,56 @@
-let handler = async (m, { conn, usedPrefix }) => conn.sendButton(m.chat, `“${bucin.getRandom()}”`, author, ['Bucin', `${usedPrefix}bucin`], m)
-
+import fetch from 'node-fetch'
+const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
+let handler = async (m) => {
+    let who
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
+    else who = m.sender
+    let user = global.db.data.users[who]
+let anu =`
+${pickRandom(global.bucin)}
+`
+     const message = {
+            document: { url: thumb },
+            jpegThumbnail: await (await fetch(thumb)).buffer(), fileName: '─────〔 𝗕𝗨𝗖𝗜𝗡 〕─────', mimetype: dpdf, fileLength: fsizedoc, pageCount: fpagedoc, giflogo,
+            caption: wm,
+            footer: anu,
+            templateButtons: [
+                {
+                    urlButton: {
+                        displayText: '🌎 OFFICIAL GROUP',
+                        url: sgc
+                    }
+                },
+                {
+                    urlButton: {
+                        displayText: '🌐 WEBSITE',
+                        url: swb
+                    }
+                },
+                {
+                    quickReplyButton: {
+                        displayText: 'NEXT',
+                        id: '.bacot'
+                    }
+                },
+            ]
+        }
+        conn.sendMessage(m.chat, message)
+}
 handler.help = ['bucin']
 handler.tags = ['quotes']
 handler.command = /^(bucin)$/i
+handler.group = false
+handler.limit = true
 
-export default handler
+handler.fail = null
 
+export default handler 
 
-// https://jalantikus.com/tips/kata-kata-bucin/
-const bucin = [
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
+
+global.bucin = [
     "Aku memilih untuk sendiri, bukan karena menunggu yang sempurna, tetapi butuh yang tak pernah menyerah.",
     "Seorang yang single diciptakan bersama pasangan yang belum ditemukannya.",
     "Jomblo. Mungkin itu cara Tuhan untuk mengatakan 'Istirahatlah dari cinta yang salah'.",

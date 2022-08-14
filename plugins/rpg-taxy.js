@@ -1,3 +1,4 @@
+
 let handler = async (m, { conn }) => {
     let __timers = (new Date - global.db.data.users[m.sender].lastngojek)
     let _timers = (300000 - __timers)
@@ -38,53 +39,52 @@ var dimas = `
 `
 
 var dimas2 = `
-🚶🚕⬛⬛⬛⬛⬛⬛⬛⬛
-⬛⬜⬜⬜⬛⬜⬜⬜⬛⬛
-⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-🏘️🏘️🏘️🏘️🌳  🌳 🏘️       
+🚶⬛⬛⬛⬛⬛🚐⬛⬛⬛🚓🚚
+🚖⬜⬜⬜⬛⬜⬜⬜🚓⬛🚑
+⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🚙
+🏘️🏘️🏢️🌳  🌳 🏘️  🏘️🏡     
 
 
-➕ Mengantar ke tujuan....
+🚖 Mengantar Ke tujuan.....
 `
 
-var dimas3 = `     
-🚶🚕⬛⬛⬛⬛⬛⬛⬛⬛
-⬛⬜⬜⬜⬛⬜⬜⬜⬛⬛
-⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+var dimas3 = `
+⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🚓
+⬛⬜🚗⬜⬜⬛⬜🚐⬜⬜⬛🚙🚚🚑
+⬛⬛⬛⬛🚒⬛⬛⬛⬛⬛⬛🚚
 🏘️🏘️🏘️🏘️🌳  🌳 🏘️       
 
 
-➕ Mengantar ke tujuan....
+🚖 Selesai Mengantar Pelanggan....
 `
 
 var dimas4 = `
-⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-⬛⬜⬜⬛⬛⬜⬜⬜⬛⬛
-⬛⬛⬛⬛⬛⬛⬛🚕⬛⬛
-🏘️🏘️🏘️🏘️🌳  🌳 🏘️ 🚶  
-
-
 ➕ 💹Menerima gaji....
-`
 `
 
 var hsl = `
-*—[ Hasil Ngewe ${name} ]—*
+*—[ Hasil Taxy ${name} ]—*
  ➕ 💹 Uang = [ ${zero4} ]
- ➕ ✨ Exp = [ ${zero5} ] 
+ ➕ ✨ Exp = [ ${zero5} ] 		 
  ➕ 😍 Order Selesai = +1
 ➕  📥Total Order Sebelumnya : ${order}
 ${wm}
 `
 
+var dimas5 = `
+*👋HALLO, Waktunya misi taxy lagi kak.....*
+`
 
-global.db.data.users[m.sender].warn += 1
 global.db.data.users[m.sender].money += rbrb4
 global.db.data.users[m.sender].exp += rbrb5
 global.db.data.users[m.sender].ojekk += 1
 
 
 setTimeout(() => {
+                     setTimeout(() => {
+                     m.reply(`${dimas4}`)
+                     }, 79200000)
+
                      m.reply(`${hsl}`)
                      }, 27000) 
                
@@ -108,10 +108,10 @@ setTimeout(() => {
                      m.reply('🔍Mencari pelanggan.....')
                      }, 0) 
   user.lastngojek = new Date * 1
-    } else conn.sendBut(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )
+    } else conn.sendButton(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, [['🧺inventory', '.inv']], m )
 }
 handler.tags = ['rpg']
-handler.command = /^(misitaxy)$/i
+handler.command = /^(grab)$/i
 handler.register = true
 
 export default handler

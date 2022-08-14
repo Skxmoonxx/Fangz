@@ -53,6 +53,9 @@ var hsl = `
 ${wm}
 `
 
+var dimas5 = `
+*👋HALLO, Waktunya misi Polisi lagi kak....*
+`
 
 global.db.data.users[m.sender].money += rbrb4
 global.db.data.users[m.sender].exp += rbrb5
@@ -60,6 +63,10 @@ global.db.data.users[m.sender].ojekk += 1
 
 
 setTimeout(() => {
+                     setTimeout(() => {
+                     m.reply(`${dimas5}`)
+                      }, 79200000)
+
                      m.reply(`${hsl}`)
                      }, 27000) 
                
@@ -83,10 +90,10 @@ setTimeout(() => {
                      m.reply('🔍Mencari pelanggan.....')
                      }, 0) 
   user.lastngojek = new Date * 1
-    } else conn.sendBut(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )
+    } else conn.sendButton(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, [['🧺inventory', '.inv']], m )
 }
 handler.tags = ['rpg']
-handler.command = /^(misipolisi)$/i
+handler.command = /^(polisi)$/i
 handler.register = true
 
 export default handler

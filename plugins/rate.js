@@ -34,7 +34,7 @@ await conn.sendMessage(m.chat, listMessage)
 handler.help = ['rating', 'ratebot']
 handler.tags = ['info']
 handler.command = /^(rate(bot)?|rating)$/i
-handler.limit = true
+handler.limit = false
 handler.private = false
 
 export default handler

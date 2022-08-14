@@ -7,8 +7,8 @@ let handler  = async (m, { conn, text }) => {
       users[jid].limit = 0
       total+=1
     }
-    if (users[jid].limitjoin < 0){
-      users[jid].limitjoin = 0
+    if (users[jid].joinlimit < 0){
+      users[jid].joinlimit = 0
       total+=1
      }
     if (users[jid].money < 0){
@@ -35,10 +35,14 @@ let handler  = async (m, { conn, text }) => {
       users[jid].exp = 0
       total+=1
     }
+    if (users[jid].levl < 0){
+      users[jid].level = 0
+      total+=1
+    }
     users[jid].money = Math.floor(users[jid].money)
     users[jid].limit = Math.floor(users[jid].limit)
   }
-  return conn.reply(m.chat,`*Berhasil memperbaiki ${total} error di database.*`,m)
+  return conn.reply(m.chat,`*📮Berhasil memperbaiki ${total} error di database.*`,m)
 }
 handler.help = ['fix'].map(v => v + ' <database>')
 handler.tags = ['owner']

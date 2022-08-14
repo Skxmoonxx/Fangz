@@ -3,10 +3,8 @@
 
 //BUY NO ENC? CHAT wa.me/6288215689772
 //GITHUB: https://github.com/Fangzbotz2007
-
 //KALAU GA ADA KASIH TANDA "-"
 
-//GA TAU CARA EDIT NYA? CHAT AUTHOR↑↑↑
 
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
@@ -40,9 +38,11 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 global.sig = 'https://instagram.com/fangzganz?igshid=YmMyMTA2M2Y=' //Instagram mu
 global.sgh = 'https://github.com/Fangzbotz2007' //Github mu
+global.swb = 'https://fangzbot.websites.co.in'
+global.syt = 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg' //YT Mu
 global.sgc = 'https://chat.whatsapp.com/HpxyS6b45SoGIKG7LHddiM' //Group WhatsApp mu
 global.sdc = 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg' //Discord Mu
-global.snh = 'https://nhentai.net/g/365296/' //Make ini ana gausah di ganti.
+global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*⫘⫘⫘⫘ALL PAYMENT⫘⫘⫘⫘⫘*/
 global.pdana = '088215689772' //Dana
@@ -61,10 +61,10 @@ global.nameown = 'Fangz Ganz' //Nama mu
 
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6288215689772'], //Owner1
-  ['6288215689772'], //Owner2
+  ['6281320170984'], //Owner1
+  ['79680341674'], //Owner2
   ['6288215689772'], //Owner3
-  ['6288215689772', 'FANGZ ! 🥶', true] //Ini buat kamu!
+  ['6281320170984', 'FANGZ ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -113,27 +113,27 @@ global.APIKeys = { // APIKey Here
 
 /*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
 //GANTI JANGAN NGASAL.
-global.wm = '                「 Fangz BOT ⁩இ 」' //Wm
+global.wm = '                「 赤 FANGZ - BOT ⁩இ 」' //Wm
 global.wm2 = '➳༻❀Fangz - Ganz❁ུ۪۪.;:୭̥.' //Name Wm
-global.wm3 = '⫹⫺ Fangz 𝗕𝗢𝗧'
-global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
+global.wm3 = '赤 FANGZ - BOT'
+global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '𝗬𝗧: FANGZ BOT' //Ganti serah lu
-global.author = '                ✧ Fangz BOT⁩ ✧' //Wm author
+global.titlebot = '𝗬𝗧: FangzXD' //Ganti serah lu
+global.author = '                © Fangz BOT By Fangz' //Wm author
 
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
 // INI JUGA GANTI SETERAH MU
-global.thumb = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg' //Thumbnail nya
-global.thumb2 = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg' //Thumbnail 2
-global.thumbbc = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg' //Image Bcgcb
-global.giflogo = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg' //Bebas
+global.thumb = 'https://telegra.ph/file/c4cfed0039e12dc8f4dd5.jpg' //Thumbnail nya
+global.thumb2 = 'https://telegra.ph/file/312d5d7a5ad4d4f8b5d7a.jpg' //Thumbnail 2
+global.thumbbc = 'https://telegra.ph/file/3377bec81cd8614917d24.jpg' //Image Bcgcb
+global.giflogo = 'https://telegra.ph/file/048f99ba552944162b6b9.jpg' //Bebas
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 //global.fla Jangan di ganti
 
 /*⫘⫘⫘⫘ LOADING ⫘⫘⫘⫘⫘*/
-global.wait = '```[█████▒▒▒▒▒] Loading. . .```'
+global.wait = '```[ ! ] wait...```'
 global.eror = '⸨Acsess Danied⸩'
 
 /*⫘⫘⫘⫘ DOCUMENT ⫘⫘⫘⫘⫘*/
@@ -143,37 +143,37 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg' //Ganti jadi foto Bot
+global.thumbdoc = 'https://telegra.ph/file/180d276284be5474b0d00.jpg' //Ganti jadi foto Bot
 
 /*⫘⫘⫘⫘ FAKE SIZE ⫘⫘⫘⫘⫘*/
 global.fsizedoc = '99999999999999' // 10TB
 global.fpagedoc = '999' //Gausah di ganti.
 
 /*⫘⫘⫘⫘ HIASAN ⫘⫘⫘⫘⫘*/
-// GAUSAH DI GANTI.
-global.dmenut = '❏───···─────〈' //top
-global.dmenub = '│✧' //body
+// DEFAULT MENU
+global.dmenut = '╭────━•〔' //top
+global.dmenub = '│ ⸙͎۪۫' //body
 global.dmenub2 = '│' //body for info cmd on Default menu
-global.dmenuf = '┗───···─────✦' //footer
+global.dmenuf = '𝙏𝙃𝘼𝙉𝙆𝙎 𝙏𝙊\n\n◐ Fokus Id\n◐FangzXD\n◐The.sad.boy01\n◐Kanna\n◐Nurutomo\n◐Bochilgaming\n◐Amirul\n◐Ilham\n◐Rasel\n◐Pemakai bot ini\n◐I love you\n\n*FANGZ BOT By Fangz*' //footer
 
 // COMMAND MENU
-global.dashmenu = '┅━━━━━═┅═✦ *DASHBOARD* ❏═┅═━━━━━┅'
-global.cmenut = '✦╍╌╌╍╌╌╍ ◸'                       //top
-global.cmenuh = '◿ ╍╌╌╍╌╌╍'                        //header
-global.cmenub = '│⌕ '                            //body
-global.cmenuf = '╰───···─────\n'                //footer
-global.cmenua = '\nજ By Fangz\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕     ' //after
-global.pmenus = '│'                              //pembatas menu selector
+global.cmenut = '╭────━•〔' //top
+global.cmenuh = '〕•━────┐' //header
+global.cmenub = '│⸙͎۪۫ ︎' //body
+global.cmenuf = '╰──────────━⃝┅⃝━────────┘\n' //footer
+global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
+global.pmenus = '│⸙︎' //pembatas menu selector
 
-global.htki = '––––––◸' // Hiasan Titile (KIRI)
-global.htka = '◿––––––' // Hiasan Title  (KANAN)
+global.htki = '––––––⦅' // Hiasan Titile (KIRI)
+global.htka = '⦆––––––' // Hiasan Title  (KANAN)
 global.lopr = '🅟' //LOGO PREMIUM ON MENU.JS
-global.lolm = 'Ⓛ' //LOGO FREE ON MENU.JS
-global.htjava = '𖥸'    //hiasan Doang :v
+global.lolm = '🅛' //LOGO FREE ON MENU.JS
+global.htjava = 'இ'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
+
 /*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
-global.stickpack = 'YT: FANGZ BOT'
+global.stickpack = 'YT: FangzXD'
 global.stickauth = `© Fangz BOT\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
 
 global.multiplier = 38 // The higher, The harder levelup

@@ -9,15 +9,15 @@ let handler = async (m, { conn, args, command }) => {
       }) * 1000
     }
     let muptime = clockString(_muptime)
- conn.reply(m.chat, `${htki} *R U N T I M E* ${htka}\n${muptime}\n`, m, {
+ await conn.sendButton(m.chat, `${muptime}\n`,wm + '\n\n' + botdate, thumb2, [['🥞MENU','.listmenu']], m, {
 contextInfo: { externalAdReply :{
                         mediaUrl: '',
                         mediaType: 2,
                         description: 'anu',
                         title: bottime,
-                        body: wm2,          previewType: 0,
+                        body: '✦ UPTIME BOT',          previewType: 0,
                         thumbnail: fs.readFileSync("./thumbnail.jpg"),
-                        sourceUrl: snh
+                        sourceUrl: sgh
                       }}
 })
 }

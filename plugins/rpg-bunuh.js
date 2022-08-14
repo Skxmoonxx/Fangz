@@ -84,7 +84,7 @@ setTimeout(() => {
                      m.reply('🔍Mencari Target pembunuhan.....')
                      }, 0) 
   user.lastngojek = new Date * 1
-    } else conn.sendBut(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )
+    } else conn.sendButton(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )
 }
 handler.help = ['bunuh']
 handler.tags = ['rpg']

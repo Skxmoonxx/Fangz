@@ -6,7 +6,7 @@ import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'
 import fs from 'fs'
 import fetch from 'node-fetch'
-
+const printMessage = (await import('./lib/print.js')).default
 /**
  * @type {import('@adiwajshing/baileys')}
  */
@@ -49,8 +49,6 @@ export async function handler(chatUpdate) {
                     user.healt = 100
                 if (!isNumber(user.title)) 
                     user.title = 0
-                if (!isNumber(user.as)) 
-                    user.as = 0
                 if (!isNumber(user.stamina)) 
                     user.stamina = 100
                 if (!isNumber(user.haus)) 
@@ -91,6 +89,8 @@ export async function handler(chatUpdate) {
                     user.BannedReason = ''
                 if (!isNumber(user.warn))
                     user.warn = 0
+                if (!isNumber(user.warning))
+                    user.warning = 0
                 if (!isNumber(user.spammer)) 
                     user.spammer = 0
                 if (!isNumber(user.bannedDate)) 
@@ -375,6 +375,7 @@ if (!isNumber(user.ayam)) user.ayam = 0
                     afkReason: '',
                     banned: false,
                     warn: 0,
+                    warning: 0,
                     level: 0,
                     role: 'Beginner',
                     autolevelup: true,
@@ -493,12 +494,6 @@ esteh: 0,
             makanancentaur: 0,
             makananserigala: 0,
 
-                    bibitpisang: 0,
-                    bibitanggur: 0,
-                    bibitmangga: 0,
-                    bibitjeruk: 0,
-                    bibitapel: 0,
-
             anakkucing: 0,
             anakkuda: 0,
             anakrubah: 0,
@@ -549,7 +544,6 @@ esteh: 0,
                     lbars: '[▒▒▒▒▒▒▒▒▒]', 
                     role: 'Newbie ㋡', 
                     
-                    autolevelup: true,
                     premium: false,
                     premiumTime: 0,
                 }
@@ -579,10 +573,8 @@ esteh: 0,
                     chat.antiSticker = false
                 if (!('viewonce' in chat))
                     chat.viewonce = false
-                if (!('antiToxic' in chat))
-                    chat.antiToxic = false
-                if (!('antiBadword' in chat)) 
-                    chat.antiBadword = true
+                if (!('antiBadword' in chat))
+                    chat.antiBadword = false
                 if (!('simi' in chat))
                     chat.simi = false
                 if (!('nsfw' in chat))
@@ -604,8 +596,7 @@ esteh: 0,
                     antiLink: false,
                     antiSticker: false,
                     viewonce: false,
-                    antiToxic: true,
-                    antiBadword: true,
+                    antiBadword: false,
                     simi: false,
                     expired: 0,
                     nsfw: false,
@@ -619,10 +610,16 @@ esteh: 0,
                 if (!('restrict' in settings)) settings.restrict = true
                 if (!('autorestart' in settings)) settings.autorestart = true
                 if (!('restartDB' in settings)) settings.restartDB = 0
+                if (!isNumber(settings.status)) settings.status = 0 // ini buat data set Status, tambah disini
+                if (!('anticall' in settings)) settings.anticall = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: true,
-                restrict: true
+                restrict: true,
+                autorestart: true,
+                restartDB: 0,
+                status: 0, // disini juga,
+                anticall: true // anticall on apa off?
             }
         } catch (e) {
             console.error(e)
@@ -639,7 +636,7 @@ esteh: 0,
             return
         if (typeof m.text !== 'string')
             m.text = ''
-
+           
         const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isOwner = isROwner || m.fromMe
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
@@ -655,8 +652,8 @@ esteh: 0,
             }, time)
         }
 
-        if (m.isBaileys)
-            return
+        if (m.isBaileys) 
+             return
         m.exp += Math.ceil(Math.random() * 10)
 
         let usedPrefix
@@ -858,7 +855,7 @@ esteh: 0,
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*🗂️ Plugin:* ${m.plugin}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${usedPrefix}${command} ${args.join(' ')}\n📄 *Error Logs:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
+                                    m.reply(`*📮HAY OWNER*\n\n_Laporan Eror terdeteksi_\n\nEROR DI 🗂️ Plugin:* ${m.plugin}\n*📤 Dari:* ${m.sender}\n*🗳️ID:* ${m.chat}\n*📑 Command Eror:* ${usedPrefix}${command} ${args.join(' ')}\n⚠️ *Logs Eror:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -872,7 +869,7 @@ esteh: 0,
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' ️Kamu menggunakan fitur limit\n╰► - 1 Limit')
+                        m.reply(' ️Kamu menggunakan fitur limit\n╰► - 1 Limit') // lain kali jangan lupa tanda kurung nya ya! ... fixed by Fokusdotid (Fokus ID)
                 }
                 break
             }
@@ -923,7 +920,7 @@ esteh: 0,
         }
 
         try {
-            if (!opts['noprint']) await (await import(`./lib/print.js`)).default(m, this)
+        	if (!opts['noprint']) await printMessage(m, this)
         } catch (e) {
             console.log(m, m.quoted, e)
         }
@@ -962,19 +959,19 @@ export async function participantsUpdate({ id, participants, action }) {
                         let wel = API('hardianto', '/api/welcome3', {
                                 profile: pp,
                                 name: await this.getName(user),
-                                bg: 'https://telegra.ph/file/99967eef4c9dd9c0cc911.png',
+                                bg: 'https://telegra.ph/file/c968f1146575fd2e0ad44.png',
                                 namegb: await this.getName(id),
                                 member: groupMetadata.participants.length
                             })
                             let lea = API('hardianto', '/api/goodbye3', {
                                 profile: pp,
                                 name: await this.getName(user),
-                                bg: 'https://telegra.ph/file/99967eef4c9dd9c0cc911.png',
+                                bg: 'https://telegra.ph/file/c968f1146575fd2e0ad44.png',
                                 namegb: await this.getName(id),
                                 member: groupMetadata.participants.length
                             })
                             // ----- ENC :v -------
-                        const _0x3332b6=_0x2c3f;(function(_0x57f48d,_0x3546d8){const _0x4da5c2=_0x2c3f,_0x5b6297=_0x57f48d();while(!![]){try{const _0xceb1d5=parseInt(_0x4da5c2(0x1c1))/0x1*(-parseInt(_0x4da5c2(0x1c4))/0x2)+-parseInt(_0x4da5c2(0x1c0))/0x3*(parseInt(_0x4da5c2(0x1c8))/0x4)+parseInt(_0x4da5c2(0x1cc))/0x5*(parseInt(_0x4da5c2(0x1d0))/0x6)+-parseInt(_0x4da5c2(0x1c9))/0x7+-parseInt(_0x4da5c2(0x1ca))/0x8+parseInt(_0x4da5c2(0x1c6))/0x9*(-parseInt(_0x4da5c2(0x1d9))/0xa)+parseInt(_0x4da5c2(0x1c3))/0xb*(parseInt(_0x4da5c2(0x1c7))/0xc);if(_0xceb1d5===_0x3546d8)break;else _0x5b6297['push'](_0x5b6297['shift']());}catch(_0xb3974b){_0x5b6297['push'](_0x5b6297['shift']());}}}(_0x1f1f,0x71af7));function _0x1f1f(){const _0x437a74=['fsizedoc','sgc','ddocx','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20ᴡ\x20ᴇ\x20ʟ\x20ᴄ\x20ᴏ\x20ᴍ\x20ᴇ\x20」','.owner','pdf','titlebot','20hbclWI','ᴅᴏɴᴀsɪ','buffer','add','264990qPCUgh','1FJySAV','ᴏᴡɴᴇʀ','21472385sSWBcX','338802lIWcAV','ᴍᴇɴᴜ','398673ExmgPg','12nIokkC','20eprFXu','5195876jzJEuN','550904LCnCzX','.donasi','30495rpFhhV','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20ɢ\x20ᴏ\x20ᴏ\x20ᴅ\x20\x20ʙ\x20ʏ\x20ᴇ」','.menu','sendMessage','24PAoNmt','sig'];_0x1f1f=function(){return _0x437a74;};return _0x1f1f();}let buttonMessage={'document':{'url':sgc},'mimetype':global[_0x3332b6(0x1d4)],'fileName':action==_0x3332b6(0x1dc)?_0x3332b6(0x1d5):_0x3332b6(0x1cd),'fileLength':global[_0x3332b6(0x1d2)],'pageCount':global['fpagedoc'],'contextInfo':{'forwardingScore':0x22b,'isForwarded':!![],'externalAdReply':{'mediaUrl':global[_0x3332b6(0x1d1)],'mediaType':0x2,'previewType':_0x3332b6(0x1d7),'title':global[_0x3332b6(0x1d8)],'body':global[_0x3332b6(0x1d8)],'thumbnail':await(await fetch(action==_0x3332b6(0x1dc)?wel:lea))[_0x3332b6(0x1db)](),'sourceUrl':global[_0x3332b6(0x1d3)]}},'caption':text,'footer':global['botdate'],'buttons':[{'buttonId':_0x3332b6(0x1ce),'buttonText':{'displayText':_0x3332b6(0x1c5)},'type':0x1},{'buttonId':_0x3332b6(0x1d6),'buttonText':{'displayText':_0x3332b6(0x1c2)},'type':0x1},{'buttonId':_0x3332b6(0x1cb),'buttonText':{'displayText':_0x3332b6(0x1da)},'type':0x1}],'headerType':0x6};function _0x2c3f(_0x406bfd,_0x5c1f55){const _0x1f1f9f=_0x1f1f();return _0x2c3f=function(_0x2c3fe1,_0x434357){_0x2c3fe1=_0x2c3fe1-0x1c0;let _0x3cb1a9=_0x1f1f9f[_0x2c3fe1];return _0x3cb1a9;},_0x2c3f(_0x406bfd,_0x5c1f55);}this[_0x3332b6(0x1cf)](id,buttonMessage,{'quoted':![],'mentionedJid':[user]});
+                        const _0x3332b6=_0x2c3f;(function(_0x57f48d,_0x3546d8){const _0x4da5c2=_0x2c3f,_0x5b6297=_0x57f48d();while(!![]){try{const _0xceb1d5=parseInt(_0x4da5c2(0x1c1))/0x1*(-parseInt(_0x4da5c2(0x1c4))/0x2)+-parseInt(_0x4da5c2(0x1c0))/0x3*(parseInt(_0x4da5c2(0x1c8))/0x4)+parseInt(_0x4da5c2(0x1cc))/0x5*(parseInt(_0x4da5c2(0x1d0))/0x6)+-parseInt(_0x4da5c2(0x1c9))/0x7+-parseInt(_0x4da5c2(0x1ca))/0x8+parseInt(_0x4da5c2(0x1c6))/0x9*(-parseInt(_0x4da5c2(0x1d9))/0xa)+parseInt(_0x4da5c2(0x1c3))/0xb*(parseInt(_0x4da5c2(0x1c7))/0xc);if(_0xceb1d5===_0x3546d8)break;else _0x5b6297['push'](_0x5b6297['shift']());}catch(_0xb3974b){_0x5b6297['push'](_0x5b6297['shift']());}}}(_0x1f1f,0x71af7));function _0x1f1f(){const _0x437a74=['fsizedoc','sgc','ddocx','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20ᴡ\x20ᴇ\x20ʟ\x20ᴄ\x20ᴏ\x20ᴍ\x20ᴇ\x20」','.owner','pdf','titlebot','20hbclWI','🌹Hallo','buffer','add','264990qPCUgh','1FJySAV','🌺Author Bot','21472385sSWBcX','338802lIWcAV','🎐Menu','398673ExmgPg','12nIokkC','20eprFXu','5195876jzJEuN','550904LCnCzX','salken','30495rpFhhV','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20ɢ\x20ᴏ\x20ᴏ\x20ᴅ\x20\x20ʙ\x20ʏ\x20ᴇ」','.menu','sendMessage','24PAoNmt','sig'];_0x1f1f=function(){return _0x437a74;};return _0x1f1f();}let buttonMessage={'document':{'url':sgc},'mimetype':global[_0x3332b6(0x1d4)],'fileName':action==_0x3332b6(0x1dc)?_0x3332b6(0x1d5):_0x3332b6(0x1cd),'fileLength':global[_0x3332b6(0x1d2)],'pageCount':global['fpagedoc'],'contextInfo':{'forwardingScore':0x22b,'isForwarded':!![],'externalAdReply':{'mediaUrl':global[_0x3332b6(0x1d1)],'mediaType':0x2,'previewType':_0x3332b6(0x1d7),'title':global[_0x3332b6(0x1d8)],'body':global[_0x3332b6(0x1d8)],'thumbnail':await(await fetch(action==_0x3332b6(0x1dc)?wel:lea))[_0x3332b6(0x1db)](),'sourceUrl':global[_0x3332b6(0x1d3)]}},'caption':text,'footer':global['botdate'],'buttons':[{'buttonId':_0x3332b6(0x1ce),'buttonText':{'displayText':_0x3332b6(0x1c5)},'type':0x1},{'buttonId':_0x3332b6(0x1d6),'buttonText':{'displayText':_0x3332b6(0x1c2)},'type':0x1},{'buttonId':_0x3332b6(0x1cb),'buttonText':{'displayText':_0x3332b6(0x1da)},'type':0x1}],'headerType':0x6};function _0x2c3f(_0x406bfd,_0x5c1f55){const _0x1f1f9f=_0x1f1f();return _0x2c3f=function(_0x2c3fe1,_0x434357){_0x2c3fe1=_0x2c3fe1-0x1c0;let _0x3cb1a9=_0x1f1f9f[_0x2c3fe1];return _0x3cb1a9;},_0x2c3f(_0x406bfd,_0x5c1f55);}this[_0x3332b6(0x1cf)](id,buttonMessage,{'quoted':![],'mentionedJid':[user]});
                     }
                 }
             }
@@ -1024,7 +1021,7 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
+📮Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
 Untuk mematikan fitur ini, ketik
 *.enable delete*
 `.trim(), msg, {
@@ -1038,18 +1035,18 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*FITUR DI TOLAK* 〄\n Fitur ini Hanya bisa di akses untuk developer !',
-        owner: '*FITUR DI TOLAK* 〄\n Fitur ini Hanya bisa di akses untuk Owner !',
-        mods: '*FITUR DI TOLAK* 〄\n Fitur ini Hanya bisa di akses khusus Moderator !',
-        premium: '*FITUR DI TOLAK* 〄\n Fitur ini Hanya bisa di akses User Premium !',
-        group: '*FITUR DI TOLAK* 〄\n Fitur ini Hanya bisa di Akses Di Group !',
-        private: '*FITUR DI TOLAK* 〄\n Fitur ini Hanya bisa di akses Di private Chat !',
-        admin: '*FITUR DI TOLAK* 〄\n Lu Admin? Hanya bisa di akses Admin Group !',
-        botAdmin: '*FITUR DI TOLAK* 〄\n Fitur ini Hanya bisa di gunakan ketika Bot Menjadi Admin !',
-        restrict: '*FITUR DI TOLAK* 〄\n Restrict Belum Nyala !',
+        rowner: 'Hai, 👋\nHanya Untuk Fangz - Ganz Tercinta><!!',
+        owner: 'Hai, 👋\nHanya Untuk Fangz - Ganz Tercinta><!!',
+        mods: 'Hai, 👋\nHanya Untuk Fangz - Ganz Tercinta><!!',
+        premium: 'Hai, 👋\nFitur Ini hanya khusus user Premium!!',
+        group: 'Hai, 👋\nFitur Ini hanya bisa dipakai didalam group!!',
+        private: 'Hai, 👋\nFitur Ini hanya bisa dipakai dichat pribadi!!',
+        admin: 'Hai, 👋\nFitur Ini hanya khusus admin group!!',
+        botAdmin: 'Hai, 👋\nJadikan bot admin dulu untuk memakai fitur ini!!',
+        restrict: '*Hai, 👋\nRestrict Belum nyala!',
     }[type]
     if (msg) return conn.reply(m.chat, msg, false, { quoted: m, contextInfo: { externalAdReply: { showAdAttribution: true,
-mediaUrl: sig,
+mediaUrl: sgc,
 title: wm,
 body: titlebot,
 sourceUrl: sgc
@@ -1057,9 +1054,9 @@ sourceUrl: sgc
  } 
 })
     let msgg = {
-    	unreg: '❗ᴀᴋꜱᴇꜱ ᴅɪ ᴛᴏʟᴀᴋ, ᴀɴᴅᴀ ᴘᴇʀʟᴜ ᴠᴇʀɪꜰɪᴋᴀꜱɪ ꜱᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ꜰᴀɴɢᴢ ʙᴏᴛ\n\n📮➞ ᴋʟɪᴄᴋ ᴠᴇʀɪꜰɪᴋᴀꜱɪ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ'
+    	unreg: '📮 Verifikasi Di perlukan untuk menambahkan user ke dalam database\n\nDaftar yuk kak...'
 }[type]
-if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, null, ['- ᴠᴇʀɪғʏ -', '/verify'],m)
+if (msgg) return conn.sendButton(m.chat, `${global.htki} REGISTER ${global.htka}`, msgg, null, ['▣ VERIFY ▣', '/verify'],m)
 }
 
 let file = global.__filename(import.meta.url, true)

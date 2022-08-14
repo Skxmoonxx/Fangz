@@ -1,13 +1,13 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-let info = `Apa Banh?`
+let info = `Nani? (・o・)`
 
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-/*const message = {
+const message = {
             document: { url: thumb },
             jpegThumbnail: await (await fetch(thumb)).buffer(), fileName: global.wm, mimetype: td, fileLength: '9999999', pageCount: '999',
-            caption: info,
+            caption: titlebot,
             footer: wm,
             templateButtons: [
                 {
@@ -17,35 +17,35 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
                     }
                 },
                 {
-                    callButton: {
+                    urlButton: {
                         displayText: '📞 Add me',
-                        phoneNumber: nomorown
+                        url: 'https://wa.me/6288215689772',
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'MENU',
+                        displayText: '📜MENU',
                         id: '.menu'
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'PING',
+                        displayText: '🐾PING',
                         id: '.ping'
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'DONASI',
+                        displayText: '💱DONASI',
                         id: '.donasi'
                     }
                 },
             ]
         }
-        return await conn.sendMessage(m.chat, message)*/
+        conn.sendMessage(m.chat, message)
 conn.reply(m.chat, info, m, { contextInfo: { externalAdReply: {title: global.wm, body: 'Yaw? ada apa kak?', sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')  }}})
 }
-handler.customPrefix = /^(tes|tess|test)$/i
+handler.customPrefix = /^(woi|halo|hallo|test|tes|p|cok)$/i
 handler.command = new RegExp
 
 export default handler

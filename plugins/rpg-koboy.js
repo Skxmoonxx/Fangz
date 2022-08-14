@@ -105,7 +105,7 @@ let handler = (m, { conn, usedPrefix, command, text }) => {
   }
 }
 handler.tags = ['rpg']
-handler.command = /^(misikoboy)/i
+handler.command = /^(koboy)/i
 
 export default handler
 

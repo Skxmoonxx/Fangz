@@ -6,8 +6,8 @@ let text = `*${htki} GROUP ${htka}*
 `
 const templateButtons = [
     {index: 3, urlButton: {displayText: '💬 ᴏᴡɴᴇʀ', url: 'https://wa.me/6288215689772'}},
-    {index: 4, quickReplyButton: {displayText: 'Open', id: '.group open'}},
-    {index: 5, quickReplyButton: {displayText: 'Close', id: '.group close'}},
+    {index: 4, quickReplyButton: {displayText: 'Open', id: '.g open'}},
+    {index: 5, quickReplyButton: {displayText: 'Close', id: '.g close'}},
 ]
 let tm = {
 text: text,

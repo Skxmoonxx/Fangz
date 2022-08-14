@@ -20,7 +20,7 @@ let rbrb1 = (randomaku1 * 2)
 let rbrb2 = (randomaku2 * 10) 
 let rbrb3 = (randomaku3 * 1)
 let rbrb4 = (randomaku4 * 15729)
-let rbrb5 = (randomaku5 * 120)
+let rbrb5 = (randomaku5 * 20000)
 
 var zero1 = `${rbrb1}`
 var zero2 = `${rbrb2}`
@@ -86,11 +86,13 @@ setTimeout(() => {
                      m.reply('🔍Mencari pelanggan.....')
                      }, 0) 
   user.lastngojek = new Date * 1
-    } else conn.sendBut(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )
+    } else conn.sendButton(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )
 }
+handler.help = ['ngewe']
 handler.tags = ['rpg']
-handler.command = /^(misingewe)$/i
+handler.command = /^(ngewe|anu)$/i
 handler.register = true
+handler.premium = true
 
 export default handler
 

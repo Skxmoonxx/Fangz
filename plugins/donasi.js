@@ -1,38 +1,32 @@
-let handler = async (m, { conn }) => {
-let info = `
-*${htki} DONASI ${htka}*
+let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
+let text = `〔 Dᴏɴ'ᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕
 
-2022 FangzBot Official 
+››╭─〘 *Donasi* 〙
+╭╡📮: Donasi ngab jgan gunain doang.
+│┝‷✧ *Ovo:* [${global.povo}]
+│┝‷✧ *Dana:* [${global.pdana}]
+│┝‷✧ *Gopay:* [${global.pgopay}]
+│╰───···─────
+│⁺◛˖ Ingin Donasi? Chat nomor owner
+╰──────────···───╮
 `
-const sections = [
-   {
-	title: `METODE`,
-	rows: [
-	    {title: "?Dana", rowId: '.donasidana', description: 'Bayar melalui Dana' },
-	    {title: "?Gopay", rowId: '.donasigopay', description: 'Bayar melalui Gopay' },
-	{title: "?Ovo", rowId: '.donasiovo', description: 'Bayar melalui Ovo' },
-	{title: "?Motion Pay", rowId: '.donasimotionpay', description: 'Bayar melalui Motion Pay' },
-	{title: "?Pulsa Smartfren", rowId: '.donasismartfren', description: 'Bayar melalui pulsa' },
-	{title: "?Pulsa Tri3", rowId: '.donasiastri', description: 'Bayar melalui pulsa' },
-	]
-    }, 
-
+const templateButtons = [
+    {index: 1, urlButton: {displayText: '🧸 YouTube 🧸', url: 'https://s.id/-1a7RO'}},
+    {index: 2, urlButton: {displayText: '💬 Instagram 💬', url: sig}},
+    {index: 3, urlButton: {displayText: '🌎 Official Group 🌎', url: sgc}},
+    {index: 4, quickReplyButton: {displayText: '🥞Menu', id: '.menu'}},
+    {index: 5, quickReplyButton: {displayText: '🌸Owner', id: '.owner'}},
 ]
-
-const listMessage = {
-  text: ' ',
-  footer: info,
-  title: null,
-  buttonText: "DONASI",
-  sections
+let tm = {
+text: text,
+footer: global.wm,
+templateButtons: templateButtons,
+image: {url: fla + 'Donasi'}
 }
-await conn.sendMessage(m.chat, listMessage, { quoted: m})
-//conn.sendHydrated(m.chat, info, wm, null, sgc, "ðŸŒŽ Group Official", null,null, [['Owner','.owner']], m)
+conn.sendMessage(m.chat, tm, m)
 }
-
-handler.help = ['donasi', 'donate']
+handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
-handler.private = true
 
 export default handler

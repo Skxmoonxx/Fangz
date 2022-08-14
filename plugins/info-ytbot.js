@@ -11,7 +11,7 @@ contextInfo: { externalAdReply :{
                         title: bottime,
                         body: 'By Fangz',          previewType: 0,
                         thumbnail: fs.readFileSync("./thumbnail.jpg"),
-                        sourceUrl: https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg
+                        sourceUrl: 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg'
                       }}
 })
 }

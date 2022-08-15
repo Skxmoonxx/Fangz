@@ -50,7 +50,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 
 const listMessage = {
   text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔>  BOT PRIVATE\nBy Fangz`,
+  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔>  ʙᴏᴛ ʙʏ ᴇʟᴀɪɴᴀ`,
   title: "▢━━━━「 Registration 」━━━━▢",
   buttonText: "ഒ Register ഒ",
   sections
@@ -81,8 +81,7 @@ const listMessage = {
 │▸ *sɴ:* ${sn}
 ╰═┅═━––––––๑
 
-http://bīt.ly/ᯤ
-ꜱᴜʙꜱᴄʀɪʙᴇ ʏᴛ: FangzXD
+ʙᴏᴛ ʙʏ ᴇʟᴀɪɴᴀ
 `
   let buttonMessage= {
 'document':{'url':'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg'},
@@ -101,11 +100,11 @@ http://bīt.ly/ᯤ
 'body':global.titlebot,
 'thumbnail':await(await fetch('https://telegra.ph/file/9c96f5d93710ebd4501a7.jpg')).buffer(),
 'sourceUrl':'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg'}},
+'caption':cap,
 'footer':botdate,
-'footer':cap,
 'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'▣ Mҽɳυ ▣'},'type':1},
-{'buttonId':'.salken','buttonText':{'displayText':'🎈Hαʅʅσ'},'type':1}
+{'buttonId':'.menu','buttonText':{'displayText':'▣ Menu ▣'},'type':1},
+{'buttonId':'.salken','buttonText':{'displayText':'😏Hallo'},'type':1}
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})

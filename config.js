@@ -37,34 +37,34 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 global.sig = 'https://instagram.com/skymoonn_real?igshid=YmMyMTA2M2Y=' //Instagram mu
-global.sgh = 'https://github.com/Xavieroffcial' //Github mu
-global.swb = 'https://fangzbot.websites.co.in'
+global.sgh = 'https://github.com/V11bot' //Github mu
+global.swb = 'https://wa.me/6283183321692'
 global.syt = 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg' //YT Mu
 global.sgc = 'https://chat.whatsapp.com/GLj5hBI2NQm5ExcMGaa4Mu' //Group WhatsApp mu
 global.sdc = 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg' //Discord Mu
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*⫘⫘⫘⫘ALL PAYMENT⫘⫘⫘⫘⫘*/
-global.pdana = '085962734007' //Dana
-global.povo = '083862006229' //Ovo
-global.pgopay = '083862006229' //Gopay
-global.ppulsa = '083862006229' //Pulsa 
-global.ppulsa2 = '085962734007' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
+global.pdana = '083183321692' //Dana
+global.povo = '-' //Ovo
+global.pgopay = '-' //Gopay
+global.ppulsa = '083183321692' //Pulsa 
+global.ppulsa2 = '-' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
 global.psaweria = 'https://saweria.co/FangzBot' //Saweria
 
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
-global.nomorbot = '6283811544678' //Nomor Bot mu
-global.nomorown = '6283862006229' //Nomormu
-global.namebot = 'Shirohige BOTZ' //Nama bot mu
-global.nameown = 'SkyxmoonOfc' //Nama mu
+global.nomorbot = '6289513431273' //Nomor Bot mu
+global.nomorown = '6283183321692' //Nomormu
+global.namebot = 'ʙᴏᴛ ʙʏ ꜰᴀɴɢᴢ' //Nama bot mu
+global.nameown = 'ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ' //Nama mu
 
 
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6283862006229'], //Owner1
-  ['6283862006229'], //Owner2
-  ['6283862006229'], //Owner3
-  ['6283862006229', 'SKYXMOON 🥶', true] //Ini buat kamu!
+  ['6283183321692'], //Owner1
+  ['6283183321692'], //Owner2
+  ['6283183321692'], //Owner3
+  ['6283183321692', 'ᴇʟᴀɪɴᴀ 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -113,13 +113,13 @@ global.APIKeys = { // APIKey Here
 
 /*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
 //GANTI JANGAN NGASAL.
-global.wm = '                「 赤 SHIROHIGE - BOTZ ⁩இ 」' //Wm
-global.wm2 = '➳༻❀ SKYXMOON ❁ུ۪۪.;:୭̥.' //Name Wm
-global.wm3 = '赤 SHIROHIGE - BOTZ'
+global.wm = '                「 赤 ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ ⁩இ 」' //Wm
+global.wm2 = '➳༻❀ ʙᴏᴛ ʙʏ ꜰᴀɴɢᴢ ❁ུ۪۪.;:୭̥.' //Name Wm
+global.wm3 = '赤 ʙᴏᴛ ʙʏ ꜰᴀɴɢᴢ'
 global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '𝗬𝗧: SkyXD' //Ganti serah lu
-global.author = '                © Shirohige BOT By Skyxmoon' //Wm author
+global.titlebot = '𝗬𝗧: ꜰᴀɴɢᴢ' //Ganti serah lu
+global.author = '                © ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ' //Wm author
 
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
@@ -173,8 +173,8 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 
 /*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
-global.stickpack = 'YT: FangzXD'
-global.stickauth = `© Fangz BOT\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
+global.stickpack = 'YT: ꜰᴀɴɢᴢ'
+global.stickauth = `© ʙᴏᴛ ʙʏ ꜰᴀɴɢᴢ\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
 
 global.multiplier = 38 // The higher, The harder levelup
 

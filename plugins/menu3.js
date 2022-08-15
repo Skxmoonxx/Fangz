@@ -327,7 +327,7 @@ ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
 const listMessage = {
   text: tek,
-  footer: '赤 FANGZ - BOT',
+  footer: '赤 ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ',
   mentions: await conn.parseMention(tek),
   title: ``,
   buttonText: `Click Here ᐢ..ᐢ`,

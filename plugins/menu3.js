@@ -308,7 +308,7 @@ let tek = `
 ───────[ DASHBOARD ]───────
 ${ucapan()}  ${await conn.getName(m.sender)}
 
-🌸 Package: *${JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ =>}*
+🌸 Package: *${JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}}*
 🌸 Uptime: ${mpt}
 🌸 WhatsApp: @${m.sender.replace(/@.+/, '')}
 🌸 Name: *${await conn.getName(m.sender)}*
@@ -535,7 +535,7 @@ const listMessage = {
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text,
-            footer: titlebot + '\n⚡ Supported By ᴇʟᴀɪɴᴀ - ᴄʜᴀɴ',
+            footer: titlebot + '\n⚡ Supported By Fangz TEAM',
             templateButtons: [
                 {
                     urlButton: {

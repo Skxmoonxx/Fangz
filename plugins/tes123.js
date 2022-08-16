@@ -19,7 +19,7 @@ const message = {
                 {
                     urlButton: {
                         displayText: '📞 Add me',
-                        url: 'https://wa.me/6288215689772',
+                        url: 'https://wa.me/6283183321692',
                     }
                 },
                 {

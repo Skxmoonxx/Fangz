@@ -82,7 +82,7 @@ const listMessage = {
 ╰═┅═━––––––๑
 
 http://bīt.ly/ᯤ
-ꜱᴜʙꜱᴄʀɪʙᴇ ʏᴛ: FangzXD
+ꜱᴜʙꜱᴄʀɪʙᴇ ʏᴛ:ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ
 `
   let buttonMessage= {
 'document':{'url':'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg'},

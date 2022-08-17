@@ -114,11 +114,11 @@ global.APIKeys = { // APIKey Here
 /*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
 //GANTI JANGAN NGASAL.
 global.wm = '                「 赤 ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ ⁩இ 」' //Wm
-global.wm2 = '➳༻❀ ʙᴏᴛ ʙʏ ꜰᴀɴɢᴢ ❁ུ۪۪.;:୭̥.' //Name Wm
-global.wm3 = '赤 ʙᴏᴛ ʙʏ ꜰᴀɴɢᴢ'
+global.wm2 = '➳༻❀ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ❁ུ۪۪.;:୭̥.' //Name Wm
+global.wm3 = '赤 ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ'
 global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '𝗬𝗧: ꜰᴀɴɢᴢ' //Ganti serah lu
+global.titlebot = 'ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ' //Ganti serah lu
 global.author = '                © ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ' //Wm author
 
 

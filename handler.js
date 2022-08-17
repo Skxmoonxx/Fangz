@@ -1035,9 +1035,9 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'Hai, 👋\nHanya Untuk Fangz - Ganz Tercinta><!!',
-        owner: 'Hai, 👋\nHanya Untuk Fangz - Ganz Tercinta><!!',
-        mods: 'Hai, 👋\nHanya Untuk Fangz - Ganz Tercinta><!!',
+        rowner: 'Hai, 👋\nHanya Untuk Owner ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ><!!',
+        owner: 'Hai, 👋\nHanya Untuk Owner ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ><!!',
+        mods: 'Hai, 👋\nHanya Untuk Moderator ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ><!!',
         premium: 'Hai, 👋\nFitur Ini hanya khusus user Premium!!',
         group: 'Hai, 👋\nFitur Ini hanya bisa dipakai didalam group!!',
         private: 'Hai, 👋\nFitur Ini hanya bisa dipakai dichat pribadi!!',

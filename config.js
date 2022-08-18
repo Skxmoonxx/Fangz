@@ -61,10 +61,10 @@ global.nameown = 'ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ' //Nama mu
 
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6283183321692'], //Owner1
-  ['6283183321692'], //Owner2
-  ['6283183321692'], //Owner3
-  ['6283183321692', 'ᴇʟᴀɪɴᴀ 🥶', true] //Ini buat kamu!
+  ['6289688069444'], //Owner1
+  ['6289518487462'], //Owner2
+  ['6289513431273'], //Owner3
+  ['6283183321692', 'Owner-Utama ᴇʟᴀɪɴᴀ ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?

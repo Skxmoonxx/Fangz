@@ -36,39 +36,45 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 // Kalau gapunya di biarin aja!, atau ga di kasih tanda '-'
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/skymoonn_real?igshid=YmMyMTA2M2Y=' //Instagram mu
-global.sgh = 'https://github.com/V11bot' //Github mu
+global.sig = 'https://instagram.com/arya_musthofa_roja01' //Instagram mu
+global.sgh = 'https://github.com/V11bot & https://github.com/devbotmail follow' //Github mu
 global.swb = 'https://wa.me/6283183321692'
-global.syt = 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg' //YT Mu
+global.swb = 'https://wa.me/6289688069444text=hai+bang+lord+yanh+baik'
+global.syt = 'https://youtube.com/channel/UCzJakcNVDiAVnvuFJ4YAoZA' //YT Mu
 global.sgc = 'https://chat.whatsapp.com/GLj5hBI2NQm5ExcMGaa4Mu' //Group WhatsApp mu
-global.sdc = 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg' //Discord Mu
+global.sgc = 'https://chat.whatsapp.com/Ds5iMgmd6SA2zYQofP8AZN' //Group WhatsApp mu
+global.sgc = 'https://chat.whatsapp.com/ERwhVvITxTXIF9fWZWYIPE' //Group WhatsApp mu
+global.sdc = 'https://youtube.com/channel/UCzJakcNVDiAVnvuFJ4YAoZA wa.me/6289688069444?text=hallo+bro' //Discord Mu
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*⫘⫘⫘⫘ALL PAYMENT⫘⫘⫘⫘⫘*/
 global.pdana = '083183321692' //Dana
-global.povo = '-' //Ovo
-global.pgopay = '-' //Gopay
-global.ppulsa = '083183321692' //Pulsa 
-global.ppulsa2 = '-' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
-global.psaweria = 'https://saweria.co/FangzBot' //Saweria
+global.pdana = 'https://wa.me/p/4996885007104729/6289688069444' //Dana
+global.povo = '089688069444' //Ovo
+global.pgopay = '089688069444' //Gopay
+global.ppulsa = '083183321692 xl mungkin' //Pulsa 
+global.ppulsa2 = '089688069444 perdana tri' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
+global.psaweria = 'https://saweria.co/bangdevs' //Saweria
 
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
 global.nomorbot = '6289513431273' //Nomor Bot mu
-global.nomorown = '6283183321692' //Nomormu
+global.nomorown = '6283183321692','6289688069444' //Nomormu
 global.namebot = 'ʙᴏᴛ ʙʏ ꜰᴀɴɢᴢ' //Nama bot mu
 global.nameown = 'ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ' //Nama mu
 
 
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6283183321692'], //Owner1
-  ['6283183321692'], //Owner2
+  ['6289688069444'], //Owner1
+  ['6289518487462'], //Owner2
   ['6289513431273'], //Owner3
+  ['6285795035419'], //OwnerSukaCoding
+  ['6288215689772'], //OwnerCreatorScript
   ['6283183321692', 'Owner-Utama ᴇʟᴀɪɴᴀ ! 🥶', true] //Ini buat kamu!
-  // [number, dia creator/owner?, dia developer?]
+  // [number, dia creator/owner?, dia developer?, dia sang moderator?, +62 896-8806-9444 adalah moderator?, dia yang utama?]
 ] // Put your number here
-global.mods = [] // Want some help?
-global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
+global.mods = [] // Want some help? (Khusus sang moderator +62 896-8806-9444)
+global.prems = [] // Premium user bukan begitu nambahinnya, ketik .addprem @nomormu 13.099
 
 
 /*⫘⫘⫘⫘ APIKEY ⫘⫘⫘⫘⫘*/
@@ -113,13 +119,13 @@ global.APIKeys = { // APIKey Here
 
 /*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
 //GANTI JANGAN NGASAL.
-global.wm = '                「 赤 ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ ⁩இ 」' //Wm
-global.wm2 = '➳༻❀ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ❁ུ۪۪.;:୭̥.' //Name Wm
+global.wm = '                「 赤 ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ இ 」' //Wm
+global.wm2 = '➳༻❀partner lord ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ +6289688069444;;;;;;❁ུ۪۪.;:୭̥.' //Name Wm
 global.wm3 = '赤 ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ'
 global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = 'ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ' //Ganti serah lu
-global.author = '                © ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ' //Wm author
+global.titlebot = 'lord ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ +6289688069444' //Ganti serah lu
+global.author = '                © ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ +6289688069444' //Wm author
 
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
@@ -133,7 +139,7 @@ global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=tr
 //global.fla Jangan di ganti
 
 /*⫘⫘⫘⫘ LOADING ⫘⫘⫘⫘⫘*/
-global.wait = '```[ ! ] wait...```'
+global.wait = '```[ ! ] wait for process...```'
 global.eror = '⸨Acsess Danied⸩'
 
 /*⫘⫘⫘⫘ DOCUMENT ⫘⫘⫘⫘⫘*/
@@ -146,7 +152,7 @@ global.drtf = 'text/rtf'
 global.thumbdoc = 'https://telegra.ph/file/180d276284be5474b0d00.jpg' //Ganti jadi foto Bot
 
 /*⫘⫘⫘⫘ FAKE SIZE ⫘⫘⫘⫘⫘*/
-global.fsizedoc = '99999999999999' // 10TB
+global.fsizedoc = '00009999999111999999900' // 10TB
 global.fpagedoc = '999' //Gausah di ganti.
 
 /*⫘⫘⫘⫘ HIASAN ⫘⫘⫘⫘⫘*/
@@ -161,7 +167,7 @@ global.cmenut = '╭────━•〔' //top
 global.cmenuh = '〕•━────┐' //header
 global.cmenub = '│⸙͎۪۫ ︎' //body
 global.cmenuf = '╰──────────━⃝┅⃝━────────┘\n' //footer
-global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
+global.cmenua = '\n⌕pp ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
 global.pmenus = '│⸙︎' //pembatas menu selector
 
 global.htki = '––––––⦅' // Hiasan Titile (KIRI)
@@ -174,7 +180,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 /*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
 global.stickpack = 'YT: ꜰᴀɴɢᴢ'
-global.stickauth = `© ʙᴏᴛ ʙʏ ꜰᴀɴɢᴢ\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
+global.stickauth = `© created ʙʏ ꜰᴀɴɢᴢ\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
 
 global.multiplier = 38 // The higher, The harder levelup
 

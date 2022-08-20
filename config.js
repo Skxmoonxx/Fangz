@@ -69,7 +69,7 @@ global.owner = [
   ['6289518487462'], //Owner2
   ['6289513431273'], //Owner3
   ['6285795035419'], //OwnerSukaCoding
-  ['6288215689772'], //OwnerCreatorScript
+  ['628821568977'], //OwnerCreatorScript
   ['6283183321692', 'Owner-Utama ᴇʟᴀɪɴᴀ ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?, dia sang moderator?, +62 896-8806-9444 adalah moderator?, dia yang utama?]
 ] // Put your number here

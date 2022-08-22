@@ -36,41 +36,41 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 // Kalau gapunya di biarin aja!, atau ga di kasih tanda '-'
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/arya_musthofa_roja01' //Instagram mu
+global.sig = 'https://instagram.com/skymoonn_real?igshid=YmMyMTA2M2Y=' //Instagram mu
 global.sgh = 'https://github.com/V11bot & https://github.com/devbotmail follow' //Github mu
-global.swb = 'https://wa.me/6283183321692'
-global.swb = 'https://wa.me/6289688069444text=hai+bang+lord+yanh+baik'
+global.swb = 'https://wa.me/6283862006229'
+global.swb = 'https://wa.me/6283862006229text=hai+bang+lord+yanh+baik'
 global.syt = 'https://youtube.com/channel/UCzJakcNVDiAVnvuFJ4YAoZA' //YT Mu
 global.sgc = 'https://chat.whatsapp.com/GLj5hBI2NQm5ExcMGaa4Mu' //Group WhatsApp mu
-global.sgc = 'https://chat.whatsapp.com/Ds5iMgmd6SA2zYQofP8AZN' //Group WhatsApp mu
-global.sgc = 'https://chat.whatsapp.com/ERwhVvITxTXIF9fWZWYIPE' //Group WhatsApp mu
-global.sdc = 'https://youtube.com/channel/UCzJakcNVDiAVnvuFJ4YAoZA wa.me/6289688069444?text=hallo+bro' //Discord Mu
+global.sgc = 'https://chat.whatsapp.com/GLj5hBI2NQm5ExcMGaa4Mu' //Group WhatsApp mu
+global.sgc = 'https://chat.whatsapp.com/GLj5hBI2NQm5ExcMGaa4Mu' //Group WhatsApp mu
+global.sdc = 'https://youtube.com/channel/UCzJakcNVDiAVnvuFJ4YAoZA wa.me/6283862006229?text=hallo+bro' //Discord Mu
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*⫘⫘⫘⫘ALL PAYMENT⫘⫘⫘⫘⫘*/
-global.pdana = '083183321692' //Dana
-global.pdana = 'https://wa.me/p/4996885007104729/6289688069444' //Dana
-global.povo = '089688069444' //Ovo
-global.pgopay = '089688069444' //Gopay
-global.ppulsa = '083183321692 xl mungkin' //Pulsa 
-global.ppulsa2 = '089688069444 perdana tri' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
+global.pdana = '085962734007' //Dana
+global.pdana = 'https://wa.me/p/4996885007104729/085962734007' //Dana
+global.povo = '083862006229' //Ovo
+global.pgopay = '083862006229' //Gopay
+global.ppulsa = '085962734007 xl mungkin' //Pulsa 
+global.ppulsa2 = '083862006229 Axis' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
 global.psaweria = 'https://saweria.co/bangdevs' //Saweria
 
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
-global.nomorbot = '6289513431273' //Nomor Bot mu
-global.nomorown = '6283183321692','6289688069444' //Nomormu
-global.namebot = 'ʙᴏᴛ ʙʏ ꜰᴀɴɢᴢ' //Nama bot mu
-global.nameown = 'ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ' //Nama mu
+global.nomorbot = '6283862006229' //Nomor Bot mu
+global.nomorown = '6283862006229','6283862006229' //Nomormu
+global.namebot = 'ʙᴏᴛ ʙʏ sᴋʏxᴍᴏᴏɴ' //Nama bot mu
+global.nameown = ''sʜɪʀᴏʜɪɢᴇ' ʙʏ sᴋʏxᴍᴏᴏɴ' //Nama mu
 
 
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6289688069444'], //Owner1
-  ['6289518487462'], //Owner2
-  ['6289513431273'], //Owner3
+  ['6283862006229'], //Owner1
+  ['6283862006229'], //Owner2
+  ['6285962734007'], //Owner3
   ['6285795035419'], //OwnerSukaCoding
   ['628821568977'], //OwnerCreatorScript
-  ['6283183321692', 'Owner-Utama ᴇʟᴀɪɴᴀ ! 🥶', true] //Ini buat kamu!
+  ['6283862006229', 'Owner-Utama sʜɪʀᴏʜɪɢᴇ ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?, dia sang moderator?, +62 896-8806-9444 adalah moderator?, dia yang utama?]
 ] // Put your number here
 global.mods = [] // Want some help? (Khusus sang moderator +62 896-8806-9444)
@@ -119,13 +119,13 @@ global.APIKeys = { // APIKey Here
 
 /*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
 //GANTI JANGAN NGASAL.
-global.wm = '                「 赤 ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ இ 」' //Wm
-global.wm2 = '➳༻❀partner lord ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ +6289688069444;;;;;;❁ུ۪۪.;:୭̥.' //Name Wm
-global.wm3 = '赤 ʙᴏᴛ ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ'
+global.wm = '                「 赤 sʜɪʀᴏʜɪɢᴇ ʙʏ sᴋʏxᴍᴏᴏɴ இ 」' //Wm
+global.wm2 = '➳༻❀partner lord sʜɪʀᴏʜɪɢᴇ ʙʏ sᴋʏxᴍᴏᴏɴ +6283862006229;;;;;;❁ུ۪۪.;:୭̥.' //Name Wm
+global.wm3 = '赤 sʜɪʀᴏʜɪɢᴇ ʙʏ sᴋʏxᴍᴏᴏɴ'
 global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = 'lord ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ +6289688069444' //Ganti serah lu
-global.author = '                © ᴇʟᴀɪɴᴀ ʙʏ ꜰᴀɴɢᴢ +6289688069444' //Wm author
+global.titlebot = 'lord sʜɪʀᴏʜɪɢᴇ ʙʏ sᴋʏxᴍᴏᴏɴ +6283862006229' //Ganti serah lu
+global.author = '                © sʜɪʀᴏʜɪɢᴇ ʙʏ sᴋʏxᴍᴏᴏɴ +6283862006229' //Wm author
 
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
@@ -180,7 +180,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 /*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
 global.stickpack = 'YT: ꜰᴀɴɢᴢ'
-global.stickauth = `© created ʙʏ ꜰᴀɴɢᴢ\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
+global.stickauth = `© created ʙʏ Skyxmoon\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
 
 global.multiplier = 38 // The higher, The harder levelup
 

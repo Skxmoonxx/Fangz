@@ -60,7 +60,7 @@ global.psaweria = 'https://saweria.co/bangdevs' //Saweria
 global.nomorbot = '6283862006229' //Nomor Bot mu
 global.nomorown = '6283862006229','6283862006229' //Nomormu
 global.namebot = 'ʙᴏᴛ ʙʏ sᴋʏxᴍᴏᴏɴ' //Nama bot mu
-global.nameown = ''sʜɪʀᴏʜɪɢᴇ' ʙʏ sᴋʏxᴍᴏᴏɴ' //Nama mu
+global.nameown = 'sʜɪʀᴏʜɪɢᴇ ʙʏ sᴋʏxᴍᴏᴏɴ' //Nama mu
 
 
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
